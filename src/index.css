@@ -1,0 +1,82 @@
+/*
+ * Colori dell'app: una palette ispirata al tema "Flatly", applicata sovrascrivendo le variabili
+ * CSS di Bootstrap. I toni sono un po' più scuri dell'originale per leggersi bene anche proiettati.
+ * Questo file è importato in main.jsx DOPO il CSS di Bootstrap, così le sue regole hanno la precedenza.
+ */
+:root {
+  --bs-primary: #2c3e50;
+  --bs-primary-rgb: 44, 62, 80;
+  --bs-success: #128f76;
+  --bs-success-rgb: 18, 143, 118;
+  --bs-danger: #c0392b;
+  --bs-danger-rgb: 192, 57, 43;
+
+  /* Testi secondari (es. il testo di aiuto sotto i campi): più scuri del grigio chiaro di default. */
+  --bs-secondary-rgb: 73, 80, 87;
+  --bs-secondary-color: #495057;
+
+  --bs-link-color: #128f76;
+  --bs-link-color-rgb: 18, 143, 118;
+  --bs-link-hover-color: #0d6b58;
+  --bs-link-hover-color-rgb: 13, 107, 88;
+
+  --bs-form-invalid-color: #c0392b;
+  --bs-form-invalid-border-color: #c0392b;
+}
+
+/* I bottoni di Bootstrap hanno i colori scritti dentro ogni classe: li ridefiniamo qui. */
+.btn-primary {
+  --bs-btn-bg: #2c3e50;
+  --bs-btn-border-color: #2c3e50;
+  --bs-btn-hover-bg: #1f2d3a;
+  --bs-btn-hover-border-color: #1f2d3a;
+  --bs-btn-active-bg: #1a252f;
+  --bs-btn-active-border-color: #1a252f;
+  --bs-btn-disabled-bg: #2c3e50;
+  --bs-btn-disabled-border-color: #2c3e50;
+}
+
+.btn-success {
+  --bs-btn-bg: #128f76;
+  --bs-btn-border-color: #128f76;
+  --bs-btn-hover-bg: #0e7562;
+  --bs-btn-hover-border-color: #0e7562;
+  --bs-btn-active-bg: #0d6b58;
+  --bs-btn-active-border-color: #0d6b58;
+  --bs-btn-disabled-bg: #128f76;
+  --bs-btn-disabled-border-color: #128f76;
+}
+
+.btn-outline-danger {
+  --bs-btn-color: #c0392b;
+  --bs-btn-border-color: #c0392b;
+  --bs-btn-hover-bg: #c0392b;
+  --bs-btn-hover-border-color: #c0392b;
+  --bs-btn-active-bg: #a93226;
+  --bs-btn-active-border-color: #a93226;
+  --bs-btn-disabled-color: #c0392b;
+  --bs-btn-disabled-border-color: #c0392b;
+}
+
+.btn-secondary {
+  --bs-btn-bg: #5f6f70;
+  --bs-btn-border-color: #5f6f70;
+  --bs-btn-hover-bg: #4d5b5c;
+  --bs-btn-hover-border-color: #4d5b5c;
+  --bs-btn-active-bg: #434f50;
+  --bs-btn-active-border-color: #434f50;
+  --bs-btn-disabled-bg: #5f6f70;
+  --bs-btn-disabled-border-color: #5f6f70;
+}
+
+/* Barra di navigazione scura: link ben leggibili e scheda attiva sottolineata. */
+.navbar .nav-link,
+.navbar .navbar-text {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar .nav-link.active {
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: inset 0 -3px 0 #18bc9c;
+}

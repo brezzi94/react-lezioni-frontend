@@ -6,8 +6,10 @@ import PaginaCani from './pages/PaginaCani'
 function App() {
   return (
     <div className="container py-4">
-      <nav className="navbar navbar-light bg-light rounded mb-4 px-3" aria-label="Intestazione">
-        <span className="navbar-brand">Cani e padroni</span>
+      <nav className="navbar bg-primary rounded mb-4 px-3" data-bs-theme="dark" aria-label="Intestazione">
+        <span className="navbar-brand">
+          Zampa Amica <span className="navbar-text ms-2">Centro cinofilo</span>
+        </span>
       </nav>
 
       <PaginaCani />
